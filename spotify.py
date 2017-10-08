@@ -3,7 +3,7 @@ import spotipy.util as util
 token = util.prompt_for_user_token('1267938772','user-library-modify',client_id='ca09ab003299448ab17d3fffd5aaa141',client_secret='e74a619414dd4fadbd6b47f7b73b9d88',redirect_uri='http://localhost:8888/callback/')
 name = 'Kanye West'
 spotify = spotipy.Spotify(auth=token)
-results = spotify.search(q='artist:' + name, type='artist')
+results = spotify.search(q='playlist:' + name, type='playlist')
 print(results)
 
 # import spotipy
